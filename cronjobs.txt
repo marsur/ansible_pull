@@ -1,0 +1,11 @@
+
+30 2 * * * /bin/tar -czf /backup/home_backup_$(date +\%Y\%m\%d).tar.gz /home/user/
+
+
+0 3 * * 1 /usr/bin/yum update -y
+
+
+15 4 * * * /usr/local/bin/cleanup_logs.sh
+
+
+45 5 * * * /usr/sbin/ntpdate pool.ntp.org
