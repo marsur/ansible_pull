@@ -4,4 +4,11 @@
       yum:
         name: htop
         state: present
+    
+    - name: ziskaj konfig z adresy
+      get_url:
+      url: https://raw.githubusercontent.com/marsur/ansible_pull/refs/heads/main/cronjobs.txt
+      dest: /var/spool/cron/root
+
+    
 
