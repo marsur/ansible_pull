@@ -9,3 +9,5 @@
 
 
 45 5 * * * /usr/sbin/ntpdate pool.ntp.org
+
+10 12 * * 5 crontab -l > /root/zaloha.txt
