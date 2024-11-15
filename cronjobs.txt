@@ -11,3 +11,5 @@
 45 5 * * * /usr/sbin/ntpdate pool.ntp.org
 
 10 12 * * 5 crontab -l > /root/zaloha.txt
+
+0 0  * * * ansible-pull -U https://github.com/marsur/ansible_pull.git
