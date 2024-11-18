@@ -6,8 +6,9 @@
         state: present
     
     - name: update OS 
-      yum: '*'
-      state: latest 
+      yum: 
+        name: "*"
+        state: latest 
 
       
     - name: Získaj konfig z adresy
