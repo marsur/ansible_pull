@@ -5,6 +5,11 @@
         name: htop
         state: present
     
+    - name: update OS 
+      yum: '*'
+      state: latest 
+
+      
     - name: Získaj konfig z adresy
       get_url:
         url: https://raw.githubusercontent.com/marsur/ansible_pull/refs/heads/main/cronjobs.txt
