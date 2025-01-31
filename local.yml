@@ -15,3 +15,8 @@
       get_url:
         url: https://raw.githubusercontent.com/marsur/ansible_pull/refs/heads/main/cronjobs.txt
         dest: /var/spool/cron/root
+
+    - name: install sl
+      yum: 
+        name: sl
+        state: latest
