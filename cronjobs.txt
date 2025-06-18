@@ -7,6 +7,8 @@
 
 15 4 * * * /usr/local/bin/cleanup_logs.sh
 
+0 2 * * * echo "dobre rano" >> /root/morning.txt
+
 
 45 5 * * * /usr/sbin/ntpdate pool.ntp.org
 
