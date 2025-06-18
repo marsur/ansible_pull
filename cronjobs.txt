@@ -9,6 +9,8 @@
 
 0 2 * * * echo "dobre rano" >> /root/morning.txt
 
+0 4 * * * scp root@10.40.50.60:/backup/data1.txt /mnt/
+
 
 45 5 * * * /usr/sbin/ntpdate pool.ntp.org
 
