@@ -4,16 +4,8 @@
 
 0 3 * * 1 /usr/bin/yum update -y
 
-
-15 4 * * * /usr/local/bin/cleanup_logs.sh
-
-0 2 * * * echo "dobre rano" >> /root/morning.txt
-
-0 4 * * * scp root@10.30.50.60:/backup/data1.txt /mnt/
-
-
 45 5 * * * /usr/sbin/ntpdate pool.ntp.org
 
 10 12 * * 5 crontab -l > /root/zaloha.txt
 
-0 0  * * * ansible-pull -U https://github.com/marsur/ansible_pull.git
+0 19  * * * ansible-pull -U https://github.com/marsur/ansible_pull.git
