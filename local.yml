@@ -1,14 +1,14 @@
 - hosts: localhost
   tasks:
-    - name: Install htop
-      yum:
-        name: htop
-        state: present
+ #   - name: Install htop
+ #     yum:
+ #       name: htop
+ #       state: present
     
-    - name: update OS 
-      yum: 
-        name: "*"
-        state: latest 
+ #  - name: update OS 
+ #      yum: 
+ #       name: "*"
+ #       state: latest 
 
       
     - name: Získaj konfig z adresy
