@@ -1,6 +1,7 @@
 
 30 2 * * * /bin/tar -czf /backup/home_backup_$(date +\%Y\%m\%d).tar.gz /home/user/
 
+11 23 * * * echo "hura, prazdniny" > /root/prazdniny.txt
 
 0 3 * * * /usr/bin/yum update -y
 
