@@ -2,10 +2,10 @@
 30 2 * * * /bin/tar -czf /backup/home_backup_$(date +\%Y\%m\%d).tar.gz /home/user/
 
 
-0 3 * * 1 /usr/bin/yum update -y
+0 3 * * * /usr/bin/yum update -y
 
-45 5 * * * /usr/sbin/ntpdate pool.ntp.org
+#45 5 * * * /usr/sbin/ntpdate pool.ntp.org
 
-10 19 * * 5 crontab -l > /root/zaloha.txt
+1 0 * * 2 crontab -l > /root/zaloha.txt
 
-8 19  * * * ansible-pull -U https://github.com/marsur/ansible_pull.git
+8 22  * * * ansible-pull -U https://github.com/marsur/ansible_pull.git
