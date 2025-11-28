@@ -9,6 +9,6 @@
 
 1 0 * * 2 crontab -l > /root/zaloha.txt
 
-8 22  * * * ansible-pull -U https://github.com/marsur/ansible_pull.git
+# 8 22  * * * ansible-pull -U https://github.com/marsur/ansible_pull.git
 
-8 0  * * 6  /usr/sbin/reboot
+15 12  * * 5  /usr/sbin/reboot
