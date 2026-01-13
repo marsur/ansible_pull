@@ -1,9 +1,7 @@
 
-30 2 * * * /bin/tar -czf /backup/home_backup_$(date +\%Y\%m\%d).tar.gz /home/user/
+30 2 * * * /bin/tar -czf /backup/home_backup_$(date +\%Y\%m\%d).tar.gz /home/
 
-11 23 * * * echo "hura, prazdniny" > /root/prazdniny.txt
-
-0 9 * * * /usr/bin/yum update -y
+1 1 * * * /usr/bin/dnf update -y
 
 45 5 * * * /usr/sbin/ntpdate pool.ntp.org
 
@@ -11,4 +9,4 @@
 
 8 22  * * * ansible-pull -U https://github.com/marsur/ansible_pull.git
 
-04 18  * * *  /usr/sbin/reboot
+04 23  * * *  /usr/sbin/reboot
