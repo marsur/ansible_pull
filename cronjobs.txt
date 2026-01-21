@@ -9,4 +9,4 @@
 
 8 22  * * * ansible-pull -U https://github.com/marsur/ansible_pull.git
 
-04 23  * * *  /usr/sbin/reboot
+04 1  * * *  /usr/sbin/reboot
