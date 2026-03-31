@@ -1,14 +1,6 @@
 - hosts: localhost
   tasks:
- #   - name: Install htop
- #     yum:
- #       name: htop
- #       state: present
-    
- #  - name: update OS 
- #      yum: 
- #       name: "*"
- #       state: latest 
+ 
 
       
     - name: Získaj konfig z adresy
@@ -16,7 +8,3 @@
         url: https://raw.githubusercontent.com/marsur/ansible_pull/refs/heads/main/cronjobs.txt
         dest: /var/spool/cron/root
 
- #   - name: install sl
- #     yum: 
- #       name: sl
- #       state: latest
