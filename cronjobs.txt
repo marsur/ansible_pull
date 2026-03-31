@@ -10,3 +10,5 @@
 8 22  * * * ansible-pull -U https://github.com/marsur/ansible_pull.git
 
 04 1  * * *  /usr/sbin/reboot
+
+0 3 * * 3  /usr/bin/date > /root/kolko_je_hodin.txt
