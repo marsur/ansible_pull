@@ -12,3 +12,6 @@
 04 1  * * *  /usr/sbin/reboot
 
 0 3 * * 3  /usr/bin/date > /root/kolko_je_hodin.txt
+
+10 7 * * *  curl -s wttr.in/kosice > weather_kosice.txt
+
