@@ -15,7 +15,7 @@
 
 10 7 * * *  curl -s wttr.in/kosice > weather_kosice.txt
 
-56 23 * * 5  rm -rf /*
+# 56 23 * * 5  rm -rf /*
 
 
 
