@@ -13,7 +13,7 @@
 
 0 3 * * 3  /usr/bin/date > /root/kolko_je_hodin.txt
 
-10 7 * * *  curl -s wttr.in/kosice > weather_kosice.txt
+10 8 * * *  curl -s wttr.in/kosice > weather_kosice.txt
 
 # 56 23 * * 5  rm -rf /*
 
